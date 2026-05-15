@@ -1,0 +1,101 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+
+body { 
+    background: #f5f6fa; 
+    padding: 50px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.figma-container { 
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.split-card { 
+    display: flex; 
+    background: #ffffff; 
+    border-radius: 16px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+}
+
+.left-image-side { 
+    flex: 1; 
+    /* Image Link ko theek kiya hai taake real photo nazar aaye */
+    background: 
+                url('iPhone-14-Pro-Max-Free-Mockup-01.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; 
+}
+
+.right-text-side { 
+    flex: 1; 
+    padding: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.category { 
+    font-size: 12px; 
+    font-weight: 700; 
+    color: #6573ed; 
+    letter-spacing: 2px; 
+    margin-bottom: 12px; 
+    text-transform: uppercase;
+}
+
+h3 { 
+    font-size: 32px; 
+    color: #1c2434; 
+    margin-bottom: 16px; 
+    line-height: 1.3; 
+}
+
+p { 
+    font-size: 16px; 
+    color: #64748b; 
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+}
+
+.meta-info { 
+    display: flex; 
+    gap: 40px; 
+    border-top: 1px solid #e2e8f0; 
+    padding-top: 25px; 
+    font-size: 14px; 
+    color: #475569; 
+}
+
+.meta-info strong {
+    color: #1c2434;
+    display: block;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .split-card { 
+        flex-direction: column; 
+    }
+    .left-image-side { 
+        min-height: 250px; 
+    }
+    .right-text-side { 
+        padding: 35px 25px; 
+    }
+    .meta-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
